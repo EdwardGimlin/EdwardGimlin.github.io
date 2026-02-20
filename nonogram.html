@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  font-size: 15px;
+}
+
+.container {
+  width: 216px;
+  height: 216px;
+}
+
+.dark-square {
+  background-color: black;
+  color: white;
+}
+</style>
+<script>
+//map of each square here, each numbered div with 'true' or 'false'
+//the value of 'true' or 'false' changes with the color
+//when every item in the map has 'true', you win
+let score = 0;
+let answerMap = new Map([
+  ["div1", true],
+  ["div2", false],
+  ["div3", true],
+  ["div4", false],
+  ["div5", true],
+  ["div6", true],
+  ["div7", false],
+  ["div8", false],
+  ["div9", false],
+  ["div10", true],
+  ["div11", true],
+  ["div12", true],
+  ["div13", false],
+  ["div14", true],
+  ["div15", true],
+  ["div16", false],
+  ["div17", true],
+  ["div18", false],
+  ["div19", true],
+  ["div20", false],
+  ["div21", true],
+  ["div22", false],
+  ["div23", false],
+  ["div24", false],
+  ["div25", true]
+
+]);
+
+answerMap.forEach(function(value, key) {
+ if(value == true) {
+  score++;
+ }
+})
+function colorChange(x) {
+ var element = document.getElementById(x);
+      element.classList.toggle("dark-square");
+      if(answerMap.get(x)) {
+       answerMap.set(x, false);
+       score--;
+      }
+      else {
+       answerMap.set(x, true);
+       score++;
+      }
+      if(score == answerMap.size) {
+       document.getElementById("scoreDisplay").innerHTML = "PUZZLE COMPLETE";
+      }
+}
+</script>
+</head>
+<body>
+
+<h2>Nonogram</h2>
+<p id="scoreDisplay">Can you solve it?</p>
+
+
+<div class="container">
+
+<!-- Top Label -->
+<div class="box"></div>
+<div class="box">1</div>
+<div class="box">2 1</div>
+<div class="box">4</div>
+<div class="box">2 1</div>
+<div class="box">1</div>
+<!-- First Row -->
+<div class="box">1 1</div>
+<div class="box" id="div1" onclick="colorChange('div1')"></div>
+<div class="box" id="div2" onclick="colorChange('div2')"></div>
+<div class="box" id="div3" onclick="colorChange('div3')"></div>
+<div class="box" id="div4" onclick="colorChange('div4')"></div>
+<div class="box" id="div5" onclick="colorChange('div5')"></div>
+<!-- Second Row -->
+<div class="box">3</div>
+<div class="box" id="div6" onclick="colorChange('div6')"></div>
+<div class="box" id="div7" onclick="colorChange('div7')"></div>
+<div class="box" id="div8" onclick="colorChange('div8')"></div>
+<div class="box" id="div9" onclick="colorChange('div9')"></div>
+<div class="box" id="div10" onclick="colorChange('div10')"></div>
+<!-- Third Row -->
+<div class="box">1</div>
+<div class="box" id="div11" onclick="colorChange('div11')"></div>
+<div class="box" id="div12" onclick="colorChange('div12')"></div>
+<div class="box" id="div13" onclick="colorChange('div13')"></div>
+<div class="box" id="div14" onclick="colorChange('div14')"></div>
+<div class="box" id="div15" onclick="colorChange('div15')"></div>
+<!-- Fourth Row -->
+<div class="box">1 1 1</div>
+<div class="box" id="div16" onclick="colorChange('div16')"></div>
+<div class="box" id="div17" onclick="colorChange('div17')"></div>
+<div class="box" id="div18" onclick="colorChange('div18')"></div>
+<div class="box" id="div19" onclick="colorChange('div19')"></div>
+<div class="box" id="div20" onclick="colorChange('div20')"></div>
+<!-- Fifth Row -->
+<div class="box">3</div>
+<div class="box" id="div21" onclick="colorChange('div21')"></div>
+<div class="box" id="div22" onclick="colorChange('div22')"></div>
+<div class="box" id="div23" onclick="colorChange('div23')"></div>
+<div class="box" id="div24" onclick="colorChange('div24')"></div>
+<div class="box" id="div25" onclick="colorChange('div25')"></div>
+
+</div>
+
+</body>
+</html>
