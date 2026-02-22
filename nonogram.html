@@ -73,6 +73,7 @@ function colorChange(x) {
       }
       if(score == answerMap.size) {
        document.getElementById("scoreDisplay").innerHTML = "PUZZLE COMPLETE";
+       document.body.style.backgroundColor = "Lime";
       }
 }
 </script>
@@ -80,6 +81,12 @@ function colorChange(x) {
 <body>
 
 <h2>Nonogram</h2>
+  <a href="index.html">Return to Main Page</a>
+<p>This kind of puzzle is called a nonogram.</p>
+  <p>Click on a square to change it from white to black, or vice versa.</p>
+<p>The numbers at the edges of the grid tell you how many squares should be colored black in each row and column.</p>
+  <p>For example, the 4 on top of the third column means that there should be 4 consecutive black squares in that column.</p>
+  <p>The 2 and 1 on top of the second column mean that there should be 2 consecutive black squares, a space (or spaces), and then a single black square.</p>
 <p id="scoreDisplay">Can you solve it?</p>
 
 
