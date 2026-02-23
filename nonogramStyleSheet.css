@@ -1,0 +1,18 @@
+div {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  font-size: 15px;
+}
+
+.container {
+  width: 216px;
+  height: 216px;
+}
+
+.dark-square {
+  background-color: black;
+  color: white;
+}
