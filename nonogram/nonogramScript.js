@@ -115,6 +115,7 @@ function initializeGrid( ) {
 
 function colorChange(selectedSquare) {
  var element = document.getElementById(selectedSquare);
+ if(score < answerMap.size) {
       element.classList.toggle("dark-square");
       if(answerMap.get(selectedSquare)) {
        answerMap.set(selectedSquare, false);
@@ -128,4 +129,5 @@ function colorChange(selectedSquare) {
        document.getElementById("scoreDisplay").innerHTML = "PUZZLE COMPLETE";
        document.body.style.backgroundColor = "Lime";
       }
+ }
 }
