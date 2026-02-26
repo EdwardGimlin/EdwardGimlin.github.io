@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="nonogramStyleSheet.css">
+<script src="nonogramScript.js"></script>
+<script>
+answerMap.set("a2", false);
+answerMap.set("a4", false);
+answerMap.set("b2", false);
+answerMap.set("b3", false);
+answerMap.set("b3", false);
+answerMap.set("c3", false);
+answerMap.set("d1", false);
+answerMap.set("d3", false);
+answerMap.set("d5", false);
+answerMap.set("e2", false);
+answerMap.set("e3", false);
+answerMap.set("e4", false);
+
+
+initializeGrid();
+</script>
+</head>
+<body>
+
+<h2>Nonogram</h2>
+<p>This kind of puzzle is called a nonogram.</p>
+  <p>Click on a square to change it from white to black, or vice versa.</p>
+<p>The numbers at the edges of the grid tell you how many squares should be colored black in each row and column.</p>
+  <p>For example, the 4 on top of the third column means that there should be 4 consecutive black squares in that column.</p>
+  <p>The 2 and 1 on top of the second column mean that there should be 2 consecutive black squares, a space (or spaces), and then a single black square.</p>
+<p id="scoreDisplay">Can you solve it?</p>
+
+
+<div class="container">
+
+<!-- Top Label -->
+<div class="box"></div>
+<div class="box">1</div>
+<div class="box">2 1</div>
+<div class="box">4</div>
+<div class="box">2 1</div>
+<div class="box">1</div>
+<!-- First Row -->
+<div class="box">1 1</div>
+<div class="box" id="a1" onclick="colorChange('a1')"></div>
+<div class="box" id="a2" onclick="colorChange('a2')"></div>
+<div class="box" id="a3" onclick="colorChange('a3')"></div>
+<div class="box" id="a4" onclick="colorChange('a4')"></div>
+<div class="box" id="a5" onclick="colorChange('a5')"></div>
+<!-- Second Row -->
+<div class="box">3</div>
+<div class="box" id="b1" onclick="colorChange('b1')"></div>
+<div class="box" id="b2" onclick="colorChange('b2')"></div>
+<div class="box" id="b3" onclick="colorChange('b3')"></div>
+<div class="box" id="b4" onclick="colorChange('b4')"></div>
+<div class="box" id="b5" onclick="colorChange('b5')"></div>
+<!-- Third Row -->
+<div class="box">1</div>
+<div class="box" id="c1" onclick="colorChange('c1')"></div>
+<div class="box" id="c2" onclick="colorChange('c2')"></div>
+<div class="box" id="c3" onclick="colorChange('c3')"></div>
+<div class="box" id="c4" onclick="colorChange('c4')"></div>
+<div class="box" id="c5" onclick="colorChange('c5')"></div>
+<!-- Fourth Row -->
+<div class="box">1 1 1</div>
+<div class="box" id="d1" onclick="colorChange('d1')"></div>
+<div class="box" id="d2" onclick="colorChange('d2')"></div>
+<div class="box" id="d3" onclick="colorChange('d3')"></div>
+<div class="box" id="d4" onclick="colorChange('d4')"></div>
+<div class="box" id="d5" onclick="colorChange('d5')"></div>
+<!-- Fifth Row -->
+<div class="box">3</div>
+<div class="box" id="e1" onclick="colorChange('e1')"></div>
+<div class="box" id="e2" onclick="colorChange('e2')"></div>
+<div class="box" id="e3" onclick="colorChange('e3')"></div>
+<div class="box" id="e4" onclick="colorChange('e4')"></div>
+<div class="box" id="e5" onclick="colorChange('e5')"></div>
+
+</div>
+
+</body>
+</html>
