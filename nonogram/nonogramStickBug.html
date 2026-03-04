@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="nonogramStyleSheet.css">
+<script src="nonogramScript.js"></script>
+<script>
+answerMap.set("a5", false);
+answerMap.set("a7", false);
+answerMap.set("b5", false);
+answerMap.set("b7", false);
+answerMap.set("c6", false);
+answerMap.set("d2", false);
+answerMap.set("d3", false);
+answerMap.set("d4", false);
+answerMap.set("d6", false);
+answerMap.set("d8", false);
+answerMap.set("d9", false);
+answerMap.set("d10", false);
+answerMap.set("e4", false);
+answerMap.set("e5", false);
+answerMap.set("e6", false);
+answerMap.set("e7", false);
+answerMap.set("e8", false);
+answerMap.set("f6", false);
+answerMap.set("g2", false);
+answerMap.set("g3", false);
+answerMap.set("g4", false);
+answerMap.set("g5", false);
+answerMap.set("g6", false);
+answerMap.set("g7", false);
+answerMap.set("g8", false);
+answerMap.set("g9", false);
+answerMap.set("g10", false);
+answerMap.set("h6", false);
+answerMap.set("i4", false);
+answerMap.set("i5", false);
+answerMap.set("i6", false);
+answerMap.set("i7", false);
+answerMap.set("i8", false);
+answerMap.set("j2", false);
+answerMap.set("j3", false);
+answerMap.set("j4", false);
+answerMap.set("j8", false);
+answerMap.set("j9", false);
+answerMap.set("j10", false);
+
+
+initializeGrid();
+</script>
+</head>
+<body>
+
+<h2>Nonogram</h2>
+<p id="scoreDisplay">Can you solve it?</p>
+
+
+<div class="container">
+
+<!-- Top Label -->
+<div class="box"></div>
+<div class="box">0</div>
+<div class="box">1 1 1</div>
+<div class="box">1 1 1</div>
+<div class="box">2 1 2</div>
+<div class="box">2 1 1 1</div>
+<div class="box">7</div>
+<div class="box">2 1 1 1</div>
+<div class="box">2 1 2</div>
+<div class="box">1 1 1</div>
+<div class="box">1 1 1</div>
+<!-- First Row -->
+<div class="box">1 1</div>
+<div class="box" id="a1" onclick="colorChange('a1')"></div>
+<div class="box" id="a2" onclick="colorChange('a2')"></div>
+<div class="box" id="a3" onclick="colorChange('a3')"></div>
+<div class="box" id="a4" onclick="colorChange('a4')"></div>
+<div class="box" id="a5" onclick="colorChange('a5')"></div>
+<div class="box" id="a6" onclick="colorChange('a6')"></div>
+<div class="box" id="a7" onclick="colorChange('a7')"></div>
+<div class="box" id="a8" onclick="colorChange('a8')"></div>
+<div class="box" id="a9" onclick="colorChange('a9')"></div>
+<div class="box" id="a10" onclick="colorChange('a10')"></div>
+<!-- Second Row -->
+<div class="box">1 1</div>
+<div class="box" id="b1" onclick="colorChange('b1')"></div>
+<div class="box" id="b2" onclick="colorChange('b2')"></div>
+<div class="box" id="b3" onclick="colorChange('b3')"></div>
+<div class="box" id="b4" onclick="colorChange('b4')"></div>
+<div class="box" id="b5" onclick="colorChange('b5')"></div>
+<div class="box" id="b6" onclick="colorChange('b6')"></div>
+<div class="box" id="b7" onclick="colorChange('b7')"></div>
+<div class="box" id="b8" onclick="colorChange('b8')"></div>
+<div class="box" id="b9" onclick="colorChange('b9')"></div>
+<div class="box" id="b10" onclick="colorChange('b10')"></div>
+<!-- Third Row -->
+<div class="box">1</div>
+<div class="box" id="c1" onclick="colorChange('c1')"></div>
+<div class="box" id="c2" onclick="colorChange('c2')"></div>
+<div class="box" id="c3" onclick="colorChange('c3')"></div>
+<div class="box" id="c4" onclick="colorChange('c4')"></div>
+<div class="box" id="c5" onclick="colorChange('c5')"></div>
+<div class="box" id="c6" onclick="colorChange('c6')"></div>
+<div class="box" id="c7" onclick="colorChange('c7')"></div>
+<div class="box" id="c8" onclick="colorChange('c8')"></div>
+<div class="box" id="c9" onclick="colorChange('c9')"></div>
+<div class="box" id="c10" onclick="colorChange('c10')"></div>
+<!-- Fourth Row -->
+<div class="box">3 1 3</div>
+<div class="box" id="d1" onclick="colorChange('d1')"></div>
+<div class="box" id="d2" onclick="colorChange('d2')"></div>
+<div class="box" id="d3" onclick="colorChange('d3')"></div>
+<div class="box" id="d4" onclick="colorChange('d4')"></div>
+<div class="box" id="d5" onclick="colorChange('d5')"></div>
+<div class="box" id="d6" onclick="colorChange('d6')"></div>
+<div class="box" id="d7" onclick="colorChange('d7')"></div>
+<div class="box" id="d8" onclick="colorChange('d8')"></div>
+<div class="box" id="d9" onclick="colorChange('d9')"></div>
+<div class="box" id="d10" onclick="colorChange('d10')"></div>
+<!-- Fifth Row -->
+<div class="box">5</div>
+<div class="box" id="e1" onclick="colorChange('e1')"></div>
+<div class="box" id="e2" onclick="colorChange('e2')"></div>
+<div class="box" id="e3" onclick="colorChange('e3')"></div>
+<div class="box" id="e4" onclick="colorChange('e4')"></div>
+<div class="box" id="e5" onclick="colorChange('e5')"></div>
+<div class="box" id="e6" onclick="colorChange('e6')"></div>
+<div class="box" id="e7" onclick="colorChange('e7')"></div>
+<div class="box" id="e8" onclick="colorChange('e8')"></div>
+<div class="box" id="e9" onclick="colorChange('e9')"></div>
+<div class="box" id="e10" onclick="colorChange('e10')"></div>
+<!-- Sixth Row -->
+<div class="box">1</div>
+<div class="box" id="f1" onclick="colorChange('f1')"></div>
+<div class="box" id="f2" onclick="colorChange('f2')"></div>
+<div class="box" id="f3" onclick="colorChange('f3')"></div>
+<div class="box" id="f4" onclick="colorChange('f4')"></div>
+<div class="box" id="f5" onclick="colorChange('f5')"></div>
+<div class="box" id="f6" onclick="colorChange('f6')"></div>
+<div class="box" id="f7" onclick="colorChange('f7')"></div>
+<div class="box" id="f8" onclick="colorChange('f8')"></div>
+<div class="box" id="f9" onclick="colorChange('f9')"></div>
+<div class="box" id="f10" onclick="colorChange('f10')"></div>
+<!-- Seventh Row -->
+<div class="box">9</div>
+<div class="box" id="g1" onclick="colorChange('g1')"></div>
+<div class="box" id="g2" onclick="colorChange('g2')"></div>
+<div class="box" id="g3" onclick="colorChange('g3')"></div>
+<div class="box" id="g4" onclick="colorChange('g4')"></div>
+<div class="box" id="g5" onclick="colorChange('g5')"></div>
+<div class="box" id="g6" onclick="colorChange('g6')"></div>
+<div class="box" id="g7" onclick="colorChange('g7')"></div>
+<div class="box" id="g8" onclick="colorChange('g8')"></div>
+<div class="box" id="g9" onclick="colorChange('g9')"></div>
+<div class="box" id="g10" onclick="colorChange('g10')"></div>
+<!-- Eighth Row -->
+<div class="box">1</div>
+<div class="box" id="h1" onclick="colorChange('h1')"></div>
+<div class="box" id="h2" onclick="colorChange('h2')"></div>
+<div class="box" id="h3" onclick="colorChange('h3')"></div>
+<div class="box" id="h4" onclick="colorChange('h4')"></div>
+<div class="box" id="h5" onclick="colorChange('h5')"></div>
+<div class="box" id="h6" onclick="colorChange('h6')"></div>
+<div class="box" id="h7" onclick="colorChange('h7')"></div>
+<div class="box" id="h8" onclick="colorChange('h8')"></div>
+<div class="box" id="h9" onclick="colorChange('h9')"></div>
+<div class="box" id="h10" onclick="colorChange('h10')"></div>
+<!-- Ninth Row -->
+<div class="box">5</div>
+<div class="box" id="i1" onclick="colorChange('i1')"></div>
+<div class="box" id="i2" onclick="colorChange('i2')"></div>
+<div class="box" id="i3" onclick="colorChange('i3')"></div>
+<div class="box" id="i4" onclick="colorChange('i4')"></div>
+<div class="box" id="i5" onclick="colorChange('i5')"></div>
+<div class="box" id="i6" onclick="colorChange('i6')"></div>
+<div class="box" id="i7" onclick="colorChange('i7')"></div>
+<div class="box" id="i8" onclick="colorChange('i8')"></div>
+<div class="box" id="i9" onclick="colorChange('i9')"></div>
+<div class="box" id="i10" onclick="colorChange('i10')"></div>
+<!-- Tenth Row -->
+<div class="box">3 3</div>
+<div class="box" id="j1" onclick="colorChange('j1')"></div>
+<div class="box" id="j2" onclick="colorChange('j2')"></div>
+<div class="box" id="j3" onclick="colorChange('j3')"></div>
+<div class="box" id="j4" onclick="colorChange('j4')"></div>
+<div class="box" id="j5" onclick="colorChange('j5')"></div>
+<div class="box" id="j6" onclick="colorChange('j6')"></div>
+<div class="box" id="j7" onclick="colorChange('j7')"></div>
+<div class="box" id="j8" onclick="colorChange('j8')"></div>
+<div class="box" id="j9" onclick="colorChange('j9')"></div>
+<div class="box" id="j10" onclick="colorChange('j10')"></div>
+
+</div>
+  
+</body>
+</html>
