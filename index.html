@@ -12,18 +12,31 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to My Personal Page!</h1>
-  <h2>🚧 Currently Under Construction 🚧</h2>
-  <button onclick = "toggleDarkMode()">Switch Between Light and Dark Mode</button>
-  <p style="color:black;">Now using light mode</p>
-  <p style="color:white;">Now using dark mode</p>
+  <h1>Edward Gimlin</h1>
+  <h2>Freelance Web Developer</h2>
+  <h2>🚧 Page Currently Under Construction 🚧</h2>
+  <h3>If you like this website, you could hire me to make one for you</h3>
+  <!-- Maybe add a work email?? -->
+  <p><a href="https://www.linkedin.com/in/edward-gimlin-a243ba34b/">LinkedIn</a> | Indeed | ZipRecruiter</p>
+  <button id="darkModeButton" onclick = "toggleDarkMode()">Switch to Dark Mode</button>
   <p>I'm planning to add some games here: maybe puzzles, card games, or even a text-based adventure game.
     For now, this is really just a proof of life. Stay tuned for more!</p>
-  <a href="/nonogram/nonogram.html">Try the nonogram puzzle here</a>
+    <a href="/nonogram/nonogram.html">Try the nonogram puzzles here</a>
+    <br>
+  <a href="https://www.worksanddaysfarm.com/">My work for a previous client</a>
   <script>
+  	darkmode = false;
     function toggleDarkMode() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+      if(darkmode) {
+      	darkmode = false;
+        document.getElementById("darkModeButton").innerHTML = "Switch to Dark Mode"; 
+      }
+      else {
+      	darkmode = true;
+        document.getElementById("darkModeButton").innerHTML = "Switch to Light Mode";
+      }
     }
   </script>
 </body>
