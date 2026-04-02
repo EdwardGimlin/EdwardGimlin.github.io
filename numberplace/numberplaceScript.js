@@ -28,6 +28,22 @@ mainPageLink.href = "https://edwardgimlin.github.io/";
 document.getElementById("navBar").appendChild(mainPageLink);
 
 
+//Create the buttons
+let checkButton = document.createElement("button");
+checkButton.innerHTML = "Check Answer";
+checkButton.onclick = "checkAnswer()";
+document.body.appendChild(checkButton);
+
+let resetButton = document.createElement("button");
+resetButton.innerHTML = "Reset";
+resetButton.onclick = "createGrid()";
+document.body.appendChild(resetButton);
+
+//Create the results display
+let scoreParagraph = document.createElement("p");
+scoreParagraph.id = "score";
+document.body.appendChild(scoreParagraph);
+
 let answerString;
 let startingString;
 
