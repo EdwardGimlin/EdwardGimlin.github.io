@@ -1,3 +1,33 @@
+// Create nav bar element:
+let navBar = document.createElement("p");
+navBar.id = "navBar";
+navBar.innerHTML = "Try them all: ";
+document.body.appendChild(navBar);
+
+//Store info for list of links
+let linkMap = new Map([
+  ["Link 1", "https://edwardgimlin.github.io/"],
+  ["Link 2", "https://edwardgimlin.github.io/"],
+  ["Link 3", "https://edwardgimlin.github.io/"]
+
+]);
+
+//Add links to nav bar
+linkMap.forEach (function(value, key) {
+  q = document.createElement("a");
+  q.innerText = key;
+  q.href = value;
+  document.getElementById("navBar").appendChild(q);
+  navBar.innerHTML += " | ";
+})
+
+//Add link back to main page
+let mainPageLink = document.createElement("a");
+mainPageLink.innerText = "Return to Main Page";
+mainPageLink.href = "https://edwardgimlin.github.io/";
+document.getElementById("navBar").appendChild(mainPageLink);
+
+
 let answerString;
 let startingString;
 
