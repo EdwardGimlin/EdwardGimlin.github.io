@@ -27,6 +27,17 @@ mainPageLink.innerText = "Return to Main Page";
 mainPageLink.href = "https://edwardgimlin.github.io/";
 document.getElementById("navBar").appendChild(mainPageLink);
 
+//Create the grid
+for(let i = 1; i < 82; i++) {
+  q = document.createElement("input");
+  q.type = "text";
+  q.id = toString(i);
+  document.body.appendChild(q);
+  if(i % 9 == 0) {
+    rowBreak = document.createElement("br");
+    document.body.appendChild(rowBreak);
+  }
+}
 
 //Create the buttons
 let checkButton = document.createElement("button");
