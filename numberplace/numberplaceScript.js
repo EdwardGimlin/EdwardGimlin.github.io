@@ -31,7 +31,7 @@ document.getElementById("navBar").appendChild(mainPageLink);
 for(let i = 1; i < 82; i++) {
   q = document.createElement("input");
   q.type = "text";
-  q.id = toString(i);
+  q.id = i.toString();
   document.body.appendChild(q);
   if(i % 9 == 0) {
     rowBreak = document.createElement("br");
