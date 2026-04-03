@@ -42,13 +42,14 @@ for(let i = 1; i < 82; i++) {
 //Create the buttons
 let checkButton = document.createElement("button");
 checkButton.innerHTML = "Check Answer";
-checkButton.onclick = "checkAnswer()";
+checkButton.addEventListener("click", checkAnswer);
 document.body.appendChild(checkButton);
 
 let resetButton = document.createElement("button");
 resetButton.innerHTML = "Reset";
-resetButton.onclick = "createGrid()";
+resetButton.addEventListener("click", createGrid);
 document.body.appendChild(resetButton);
+
 
 /**
 //Create the results display
