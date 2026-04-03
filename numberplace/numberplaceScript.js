@@ -33,10 +33,10 @@ for(let i = 1; i < 82; i++) {
   q.type = "text";
   q.id = i.toString();
   if(i % 3 == 0) {
-    q.style.borderRight = "5px solid";
+    q.style.borderRight = "20px solid";
   }
   if((i - 1) % 27 >= 18) {
-    q.style.borderBottom = "5px solid";
+    q.style.borderBottom = "20px solid";
   }
   document.body.appendChild(q);
   if(i % 9 == 0) {
