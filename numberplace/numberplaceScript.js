@@ -64,12 +64,12 @@ resetButton.addEventListener("click", createGrid);
 document.body.appendChild(resetButton);
 
 
-/**
+
 //Create the results display
 let scoreParagraph = document.createElement("p");
 scoreParagraph.id = "score";
 document.body.appendChild(scoreParagraph);
-**/
+
 let answerString;
 let startingString;
 
