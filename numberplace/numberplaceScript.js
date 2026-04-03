@@ -32,6 +32,12 @@ for(let i = 1; i < 82; i++) {
   q = document.createElement("input");
   q.type = "text";
   q.id = i.toString();
+  if(i % 3 == 0) {
+    q.style.borderRight = "5px solid";
+  }
+  if((i - 1) % 27 >= 18) {
+    q.style.borderBottom = "5px solid";
+  }
   document.body.appendChild(q);
   if(i % 9 == 0) {
     rowBreak = document.createElement("br");
