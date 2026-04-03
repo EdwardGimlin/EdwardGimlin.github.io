@@ -33,8 +33,14 @@ for(let i = 1; i < 82; i++) {
   q.type = "text";
   q.id = i.toString();
   q.style.border = "1px solid";
+  if(i < 10) {
+    q.style.borderTop = "10px solid";
+  }
   if(i % 3 == 0) {
     q.style.borderRight = "10px solid";
+  }
+  else if(i % 9 == 1) {
+    q.style.borderLeft = "10px solid";
   }
   if((i - 1) % 27 >= 18) {
     q.style.borderBottom = "10px solid";
