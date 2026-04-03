@@ -32,11 +32,12 @@ for(let i = 1; i < 82; i++) {
   q = document.createElement("input");
   q.type = "text";
   q.id = i.toString();
+  q.style.border = "1px solid";
   if(i % 3 == 0) {
-    q.style.borderRight = "100px solid";
+    q.style.borderRight = "10px solid";
   }
   if((i - 1) % 27 >= 18) {
-    q.style.borderBottom = "100px solid";
+    q.style.borderBottom = "10px solid";
   }
   document.body.appendChild(q);
   if(i % 9 == 0) {
