@@ -27,6 +27,18 @@ mainPageLink.innerText = "Return to Main Page";
 mainPageLink.href = "https://edwardgimlin.github.io/";
 document.getElementById("navBar").appendChild(mainPageLink);
 
+//Place to show the rules
+let rulesDisplay = document.createElement("p");
+rulesDisplay.id = "rulesDisplay";
+rulesDisplay.innerHTML = "";
+document.body.appendChild(rulesDisplay);
+
+//Toggle the rules display
+let rulesButton = document.createElement("button");
+rulesButton.innerHTML = "Show/Hide rules";
+rulesButton.addEventListener("click", showRules);
+document.body.appendChild(rulesButton);
+
 //Create the grid
 for(let i = 1; i < 82; i++) {
   q = document.createElement("input");
@@ -103,4 +115,14 @@ function createGrid() {
     
   }
   
+}
+
+//Display the rules
+function showRules() {
+  if(document.getElementById("rulesDisplay").innerHTML == "") {
+    document.getElementById("rulesDisplay").innerHTML = "Fill in each square with a number from 1 to 9. The same number can only show up once in each row, column, and 9x9 box.";
+  }
+  else {
+    document.getElementById("rulesDisplay").innerHTML = "";
+  }
 }
