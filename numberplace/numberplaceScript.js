@@ -39,6 +39,9 @@ rulesButton.innerHTML = "Show/Hide rules";
 rulesButton.addEventListener("click", showRules);
 document.body.appendChild(rulesButton);
 
+let breaker = document.createElement("br");
+document.body.appendChild(breaker);
+
 //Create the grid
 for(let i = 1; i < 82; i++) {
   q = document.createElement("input");
