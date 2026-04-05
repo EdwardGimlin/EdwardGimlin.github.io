@@ -27,17 +27,17 @@ mainPageLink.innerText = "Return to Main Page";
 mainPageLink.href = "https://edwardgimlin.github.io/";
 document.getElementById("navBar").appendChild(mainPageLink);
 
-//Place to show the rules
-let rulesDisplay = document.createElement("p");
-rulesDisplay.id = "rulesDisplay";
-rulesDisplay.innerHTML = "";
-document.body.appendChild(rulesDisplay);
-
 //Toggle the rules display
 let rulesButton = document.createElement("button");
 rulesButton.innerHTML = "Show/Hide rules";
 rulesButton.addEventListener("click", showRules);
 document.body.appendChild(rulesButton);
+
+//Place to show the rules
+let rulesDisplay = document.createElement("p");
+rulesDisplay.id = "rulesDisplay";
+rulesDisplay.innerHTML = "";
+document.body.appendChild(rulesDisplay);
 
 let breaker = document.createElement("br");
 document.body.appendChild(breaker);
