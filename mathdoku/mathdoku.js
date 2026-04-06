@@ -44,17 +44,6 @@ document.body.appendChild(breaker);
 
 //Create the grid
 // TODO: will probably have to move this to HTML. The borders will be different for each one
-for(let i = 1; i < 17; i++) {
-  q = document.createElement("input");
-  q.type = "text";
-  q.id = i.toString();
-  q.style.border = "1px solid";
-  document.body.appendChild(q);
-  if(i % 4 == 0) {
-    rowBreak = document.createElement("br");
-    document.body.appendChild(rowBreak);
-  }
-}
 
 //Create the buttons
 let checkButton = document.createElement("button");
