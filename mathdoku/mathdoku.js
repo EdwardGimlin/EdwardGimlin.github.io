@@ -33,18 +33,6 @@ rulesButton.innerHTML = "Show/Hide rules";
 rulesButton.addEventListener("click", showRules);
 document.body.appendChild(rulesButton);
 
-//Place to show the rules
-let rulesDisplay = document.createElement("p");
-rulesDisplay.id = "rulesDisplay";
-rulesDisplay.innerHTML = "";
-document.body.appendChild(rulesDisplay);
-
-let breaker = document.createElement("br");
-document.body.appendChild(breaker);
-
-//Create the grid
-// TODO: will probably have to move this to HTML. The borders will be different for each one
-
 //Create the buttons
 let checkButton = document.createElement("button");
 checkButton.innerHTML = "Check Answer";
@@ -56,7 +44,30 @@ resetButton.innerHTML = "Reset";
 resetButton.addEventListener("click", createGrid);
 document.body.appendChild(resetButton);
 
+//Create the results display
+let scoreParagraph = document.createElement("p");
+scoreParagraph.id = "score";
+document.body.appendChild(scoreParagraph);
 
+//Rules display
+let rulesDisplay = document.createElement("p");
+rulesDisplay.id = "rulesDisplay";
+rulesDisplay.innerHTML = "";
+document.body.appendChild(rulesDisplay);
+
+let breaker = document.createElement("br");
+document.body.appendChild(breaker);
+
+//Create the buttons
+let checkButton = document.createElement("button");
+checkButton.innerHTML = "Check Answer";
+checkButton.addEventListener("click", checkAnswer);
+document.body.appendChild(checkButton);
+
+let resetButton = document.createElement("button");
+resetButton.innerHTML = "Reset";
+resetButton.addEventListener("click", createGrid);
+document.body.appendChild(resetButton);
 
 //Create the results display
 let scoreParagraph = document.createElement("p");
@@ -93,7 +104,7 @@ function createGrid() {
 //Display the rules
 function showRules() {
   if(document.getElementById("rulesDisplay").innerHTML == "") {
-    document.getElementById("rulesDisplay").innerHTML = "Fill in each square with a number from 1 to 9. The same number can only show up once in each row, column, and 9x9 box.";
+    document.getElementById("rulesDisplay").innerHTML = "Fill in each square with a number from 1 to 4. The same number can only show up once in each row, column, and cell (outlined with solid lines).";
   }
   else {
     document.getElementById("rulesDisplay").innerHTML = "";
