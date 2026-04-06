@@ -58,22 +58,6 @@ document.body.appendChild(rulesDisplay);
 let breaker = document.createElement("br");
 document.body.appendChild(breaker);
 
-//Create the buttons
-let checkButton = document.createElement("button");
-checkButton.innerHTML = "Check Answer";
-checkButton.addEventListener("click", checkAnswer);
-document.body.appendChild(checkButton);
-
-let resetButton = document.createElement("button");
-resetButton.innerHTML = "Reset";
-resetButton.addEventListener("click", createGrid);
-document.body.appendChild(resetButton);
-
-//Create the results display
-let scoreParagraph = document.createElement("p");
-scoreParagraph.id = "score";
-document.body.appendChild(scoreParagraph);
-
 let answerString;
 let startingString;
 
