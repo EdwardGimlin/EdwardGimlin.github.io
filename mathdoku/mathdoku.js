@@ -64,7 +64,7 @@ let startingString;
 //checks if solution is correct
 function checkAnswer() {
   var x = "";
-  for(let i = 1; i < 16; i++) {
+  for(let i = 1; i < 17; i++) {
     x += document.getElementById(i.toString()).value;
   }
   if(x == answerString) {
@@ -77,7 +77,7 @@ function checkAnswer() {
 
 //create or restart grid
 function createGrid() {
-  for(let i = 1; i < 16; i++) {
+  for(let i = 1; i < 17; i++) {
     document.getElementById(i.toString()).value = "";
     document.getElementById(i.toString()).maxLength = 1;
     
