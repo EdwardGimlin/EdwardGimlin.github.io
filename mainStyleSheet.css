@@ -6,6 +6,7 @@ a {
       display: inline-block;
       border-color: black;
       border-style: none;
+      border-radius: 10px;
     }
     a:hover, a:active {
       border-style: inset;
@@ -25,8 +26,8 @@ a {
       background-color: black;
       color: white;
       border-color: white;
-      padding: 14px 25px;
-      border-radius: 5px;
+      padding: 7px 12px;
+      border-radius: 20px;
     }
     h1 {
       background-color: blue;
