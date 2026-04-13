@@ -1,5 +1,6 @@
 a {
       color: white;
+      background-color: black;
       padding: 14px 25px;
       text-align: center;
       text-decoration: none;
@@ -30,7 +31,7 @@ a {
       border-radius: 20px;
     }
     h1 {
-      background-color: blue;
+      background-color: black;
       color: white;
       font-family: Georgia, "Times New Roman", serif;
     }
