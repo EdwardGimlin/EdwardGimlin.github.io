@@ -3,7 +3,7 @@ h1 {
 }
 
 div {
-  float: left;
+  float: center;
   width: 30px;
   height: 30px;
   border-style: solid;
