@@ -2,8 +2,8 @@ h1 {
   background-color: red;
 }
 
-div {
-  float: center;
+.box {
+  float: left;
   width: 30px;
   height: 30px;
   border-style: solid;
@@ -11,12 +11,16 @@ div {
   font-size: 15px;
 }
 
-.container {
-  width: 396px;
-  height: 396px;
-}
-
 .dark-square {
   background-color: black;
   color: white;
+}
+
+.container {
+  width: 396px;
+  height: 396px;
+  /* margin: auto keeps it centered */
+  margin: auto;
+  border-style: solid;
+  border-color: black;
 }
