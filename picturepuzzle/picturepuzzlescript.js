@@ -6,9 +6,17 @@ document.body.appendChild(navBar);
 
 //Store info for list of links
 let linkMap = new Map([
-  ["Link 1", "https://edwardgimlin.github.io/"],
-  ["Link 2", "https://edwardgimlin.github.io/"],
-  ["Link 3", "https://edwardgimlin.github.io/"]
+  ["1", "picturepuzzle1.html"],
+  ["2", "picturepuzzle2.html"],
+  ["3", "picturepuzzle3.html"],
+  ["4", "picturepuzzle4.html"],
+  ["5", "picturepuzzle5.html"],
+  ["6", "picturepuzzle6.html"],
+  ["7", "picturepuzzle7.html"],
+  ["8", "picturepuzzle8.html"],
+  ["9", "picturepuzzle9.html"],
+  ["10", "picturepuzzle10.html"],
+  ["11", "picturepuzzle11.html"]
 
 ]);
 
