@@ -33,6 +33,22 @@ rulesButton.innerHTML = "Show/Hide rules";
 rulesButton.addEventListener("click", showRules);
 document.body.appendChild(rulesButton);
 
+//Create the buttons
+let checkButton = document.createElement("button");
+checkButton.innerHTML = "Check Answer";
+checkButton.addEventListener("click", checkAnswer);
+document.body.appendChild(checkButton);
+
+let resetButton = document.createElement("button");
+resetButton.innerHTML = "Reset";
+resetButton.addEventListener("click", createGrid);
+document.body.appendChild(resetButton);
+
+//Create the results display
+let scoreParagraph = document.createElement("p");
+scoreParagraph.id = "score";
+document.body.appendChild(scoreParagraph);
+
 //Place to show the rules
 let rulesDisplay = document.createElement("p");
 rulesDisplay.id = "rulesDisplay";
@@ -67,24 +83,6 @@ for(let i = 1; i < 82; i++) {
   }
 }
 
-//Create the buttons
-let checkButton = document.createElement("button");
-checkButton.innerHTML = "Check Answer";
-checkButton.addEventListener("click", checkAnswer);
-document.body.appendChild(checkButton);
-
-let resetButton = document.createElement("button");
-resetButton.innerHTML = "Reset";
-resetButton.addEventListener("click", createGrid);
-document.body.appendChild(resetButton);
-
-
-
-//Create the results display
-let scoreParagraph = document.createElement("p");
-scoreParagraph.id = "score";
-document.body.appendChild(scoreParagraph);
-
 let answerString;
 let startingString;
 
@@ -117,6 +115,7 @@ function createGrid() {
     document.getElementById(i.toString()).maxLength = 1;
     
   }
+  document.getElementById("score").innerHTML = "";
   
 }
 

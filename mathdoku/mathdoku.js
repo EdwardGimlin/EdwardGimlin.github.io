@@ -82,7 +82,7 @@ function createGrid() {
     document.getElementById(i.toString()).maxLength = 1;
     
   }
-  
+  document.getElementById("score").innerHTML = "";
 }
 
 //Display the rules
