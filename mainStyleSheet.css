@@ -6,11 +6,12 @@ a {
       text-decoration: none;
       display: inline-block;
       border-color: black;
-      border-style: none;
+      border-style: solid;
       border-radius: 10px;
     }
     a:hover, a:active {
-      border-style: inset;
+      color: black;
+      background-color: white;
     }
     body {
       background-color: white;
