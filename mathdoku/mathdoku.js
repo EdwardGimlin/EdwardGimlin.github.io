@@ -7,7 +7,8 @@ document.body.appendChild(navBar);
 //Store info for list of links
 let linkMap = new Map([
   ["1", "mathdoku.html"],
-  ["2", "mathdoku2.html"]
+  ["2", "mathdoku2.html"],
+  ["3", "mathdoku3.html"]
 
 ]);
 
