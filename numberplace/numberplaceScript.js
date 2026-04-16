@@ -7,7 +7,8 @@ document.body.appendChild(navBar);
 //Store info for list of links
 let linkMap = new Map([
   ["1", "numberplace.html"],
-  ["2", "numberplace2.html"]
+  ["2", "numberplace2.html"],
+  ["3", "numberplace3.html"]
 ]);
 
 //Add links to nav bar
