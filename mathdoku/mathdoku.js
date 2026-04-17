@@ -88,7 +88,7 @@ function createGrid() {
 //Display the rules
 function showRules() {
   if(document.getElementById("rulesDisplay").innerHTML == "") {
-    document.getElementById("rulesDisplay").innerHTML = "Fill in each square with a number from 1 to 4. The same number can only show up once in each row, column, and cell (outlined with solid lines).";
+    document.getElementById("rulesDisplay").innerHTML = "Fill in the boxes with the numbers 1-4. Each number can only appear once in each row and column. The boxes are grouped into cells (shown by solid black borders). Each cell has a target number and an operation (+, -, x, or ÷) in its top left corner. The operation in a cell must be combined with the numbers in each box to make an equation, which equals the target number. For example, if a cell has "5+" in the corner, and two boxes, then the numbers in the boxes must add up to five.";
   }
   else {
     document.getElementById("rulesDisplay").innerHTML = "";
