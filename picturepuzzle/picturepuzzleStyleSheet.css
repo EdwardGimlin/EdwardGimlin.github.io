@@ -4,8 +4,8 @@ h1 {
 
 .box {
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-color: black;
   font-size: 15px;
@@ -17,8 +17,8 @@ h1 {
 }
 
 .container {
-  width: 396px;
-  height: 396px;
+  width: 506px;
+  height: 506px;
   /* margin: auto keeps it centered */
   margin: auto;
   border-style: solid;
