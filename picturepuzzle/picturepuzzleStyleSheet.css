@@ -16,6 +16,12 @@ h1 {
   color: white;
 }
 
+.red-square {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+
 .container {
   width: 506px;
   height: 506px;
