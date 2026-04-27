@@ -142,6 +142,7 @@ let answerMap = new Map([
 
 let statusMap = new Map([
  //Letter represents row top-to-bottom, number represents column left-to-right
+  //0 is white, 1 is black, 2 is a red X
  ["a1", 0],
  ["a2", 0],
  ["a3", 0],
@@ -260,7 +261,7 @@ function colorChange(selectedSquare) {
       if(statusMap.get(selectedSquare) == 0) {
        statusMap.set(selectedSquare, 1);
        element.classList.toggle("dark-square"); 
-       if(answerMap.get(selectedSquare) == 1) {
+       if(answerMap.get(selectedSquare) == false) {
          score++;
        }
        else {
@@ -272,7 +273,7 @@ function colorChange(selectedSquare) {
        element.classList.toggle("dark-square");
        element.classList.toggle("red-square");
        document.getElementById(selectedSquare).innerHTML = "X";
-       if(answerMap.get(selectedSquare) == 1) {
+       if(answerMap.get(selectedSquare) == false) {
          score--;
        }
        else {
